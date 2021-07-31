@@ -1,0 +1,17 @@
+name: kemal-flash2
+version: 0.1.0
+
+authors:
+  - Peter Wood <pw0470@gmail.com>
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+  kemal-session:
+    github: kemalcr/kemal-session
+  spectator:
+    gitlab: arctic-fox/spectator
+
+crystal: 1.1.1
+
+license: MIT
