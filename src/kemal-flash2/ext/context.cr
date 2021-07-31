@@ -4,10 +4,10 @@ class HTTP::Server::Context
   @flash_store : Kemal::Flash2::FlashStore = Kemal::Flash2::FlashStore.new
 
   def flash
-    @flash_store ||= FlashStore.new
+    @flash_store ||= Kemal::Flash2::FlashStore.new
   end
 
-  def flash=(store : FlashStore)
+  def flash=(store : Kemal::Flash2::FlashStore)
     @flash_store = store
   end
 end
