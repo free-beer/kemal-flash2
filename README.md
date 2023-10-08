@@ -60,7 +60,7 @@ when you set up the middleware like this...
 
 ```crystal
 # Add the middleware to handle flash.
-add_handler FlashHandler.new("alternative_key")
+add_handler Kemal::Flash2::FlashHandler.new("alternative_key")
 ```
 
 ## Contributing
