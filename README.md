@@ -31,7 +31,7 @@ require "kemal-session"
 require "kemal-flash2"
 
 # Add the middleware to handle flash.
-add_handler FlashHandler.new
+add_handler Kemal::Flash2::FlashHandler.new
 
 get "/" do |env|
   env.flash["notice"] = "welcome"
